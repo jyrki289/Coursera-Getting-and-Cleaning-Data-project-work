@@ -94,7 +94,6 @@ for (i in 1:length(columnnames))
 {
     columnnames[i] <- gsub("\\()","",columnnames[i])
     columnnames[i] <- gsub("-std","StdDev",columnnames[i])
-    columnnames[i] <- gsub("-std$","StdDev",columnnames[i])
     columnnames[i] <- gsub("-mean","Mean",columnnames[i])
     columnnames[i] <- gsub("^(t)","time",columnnames[i])
     columnnames[i] <- gsub("^(f)","freq",columnnames[i])
