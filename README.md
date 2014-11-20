@@ -97,15 +97,17 @@ Variables:
 <strong>Identifier columns</strong>
 <ul>
 <li>activity</li>
-</ul>
+
 <ul>
-Activity label, actity performed by volunteer (subjectid)  
-Type: character  
-Values: LAYING, SITTING, STANDING, WALKING, WLKING_DOWNSTAIRS, WALKING_UPSTAIRS  
+--Activity label, actity performed by volunteer (subjectid)  
+--Type: character  
+--Values: LAYING, SITTING, STANDING, WALKING, WLKING_DOWNSTAIRS, WALKING_UPSTAIRS  
+</ul>
 </ul>
 <ul>
 <li>subjectid</li>
 </ul>
+
 <ul>
 Identifier of volunteer  
 Type: Numeric - Integer  
