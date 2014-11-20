@@ -12,8 +12,8 @@ Preconditions:
 
 Scipt Description
 -----------------
-Scipt create tidydata from UCI HAR DATASET (Human Activity Recognition Using Smartphones Dataset).
-UCI HAR DATASET  dataset can be found url: "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
+&nbsp; Scipt create tidydata from UCI HAR DATASET (Human Activity Recognition Using Smartphones Dataset).  
+&nbsp; UCI HAR DATASET  dataset can be found from url: "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
 
 <strong>Script reads folloving txt data files:</strong>
 <ul>
@@ -24,7 +24,7 @@ UCI HAR DATASET  dataset can be found url: "https://d396qusza40orc.cloudfront.ne
 <li>X_train.txt</li>
 <li>y_train.txt</li>
 </ul>
-<em>Please note that all data have to be under your working directoy in subfolder UCI HAR Dataset</em>
+&nbsp; <em>Please note that all data have to be under your working directoy in subfolder UCI HAR Dataset</em>
 
 <strong>Data manipulations</strong>
 
@@ -34,17 +34,17 @@ Following manipulations is made to data:
 <li>columns are also named by following rules</li>
 </ul>
 <ol>
-	<li>-std to StdDev</li>
-	<li>-mean to Mean</li>
-	<li>-t to time</li>
-	<li>-f to freq</li>
-	<li>gravity to Gravity</li>
-	<li>body to Body</li>
-	<li>gyro to Gyro</li>
-	<li>AccMag to AccMagnitude</li>
-	<li>bodyaccjerkmag to BodyAccJerkMagnitude</li>
-	<li>JerkMag to JerkMagnitude</li>
-	<li>GyroMag to GyroMagnitude</li>
+&nbsp; 	<li>-std to StdDev</li>
+&nbsp; 	<li>-mean to Mean</li>
+&nbsp; 	<li>-t to time</li>
+&nbsp; 	<li>-f to freq</li>
+&nbsp; 	<li>gravity to Gravity</li>
+&nbsp; 	<li>body to Body</li>
+&nbsp; 	<li>gyro to Gyro</li>
+&nbsp; 	<li>AccMag to AccMagnitude</li>
+&nbsp; 	<li>bodyaccjerkmag to BodyAccJerkMagnitude</li>
+&nbsp; 	<li>JerkMag to JerkMagnitude</li>
+&nbsp; 	<li>GyroMag to GyroMagnitude</li>
 </ol>
 <ul>
 <li>Activities number/code is replased according to UCI HAR Dataset/activity_labels.txt</li>
@@ -99,70 +99,70 @@ Values: 1 to 30
 All measure columns are numeric. Desimalseparator is ".", negative symbol for value is "-". 
 Lettrs (x, y z) is used to denote 3-axial signals in the X, Y and Z directions.  
 <ul>
-<li>timeBodyAccMean-X/<li>
-<li>timeBodyAccMean-Y<li>
-<li>timeBodyAccMean-Z<li>
-<li>timeBodyAccStdDev-X<li>
-<li>timeBodyAccStdDev-Y<li>
-<li>timeBodyAccStdDev-Z<li>
-<li>timeGravityAccMean-X<li>
-<li>timeGravityAccMean-Y<li>
-<li>timeGravityAccMean-Z<li>
-<li>timeGravityAccStdDev-X<li>
-<li>timeGravityAccStdDev-Y<li>
-<li>timeGravityAccStdDev-Z<li>
-<li>timeBodyAccJerkMean-X<li>
-<li>timeBodyAccJerkMean-Y<li>
-<li>timeBodyAccJerkMean-Z<li>
-<li>timeBodyAccJerkStdDev-X<li>
-<li>timeBodyAccJerkStdDev-Y<li>
-<li>timeBodyAccJerkStdDev-Z<li>
-<li>timeBodyGyroMean-X<li>
-<li>timeBodyGyroMean-Y<li>
-<li>timeBodyGyroMean-Z<li>
-<li>timeBodyGyroStdDev-X<li>
-<li>timeBodyGyroStdDev-Y<li>
-<li>timeBodyGyroStdDev-Z<li>
-<li>timeBodyGyroJerkMean-X<li>
-<li>timeBodyGyroJerkMean-Y<li>
-<li>timeBodyGyroJerkMean-Z<li>
-<li>timeBodyGyroJerkStdDev-X<li>
-<li>timeBodyGyroJerkStdDev-Y<li>
-<li>timeBodyGyroJerkStdDev-Z<li>
-<li>timeBodyAccMagnitudeMean<li>
-<li>timeBodyAccMagnitudeStdDev<li>
-<li>timeGravityAccMagnitudeMean<li>
-<li>timeGravityAccMagnitudeStdDev<li>
-<li>timeBodyAccJerkMagnitudeMean<li>
-<li>timeBodyAccJerkMagnitudeStdDev<li>
-<li>timeBodyGyroMagnitudeMean<li>
-<li>timeBodyGyroMagnitudeStdDev<li>
-<li>timeBodyGyroJerkMagnitudeMean<li>
-<li>timeBodyGyroJerkMagnitudeStdDev<li>
-<li>freqBodyAccMean-X<li>
-<li>freqBodyAccMean-Y<li>
-<li>freqBodyAccMean-Z<li>
-<li>freqBodyAccStdDev-X<li>
-<li>freqBodyAccStdDev-Y<li>
-<li>freqBodyAccStdDev-Z<li>
-<li>freqBodyAccJerkMean-X<li>
-<li>freqBodyAccJerkMean-Y<li>
-<li>freqBodyAccJerkMean-Z<li>
-<li>freqBodyAccJerkStdDev-X<li>
-<li>freqBodyAccJerkStdDev-Y<li>
-<li>freqBodyAccJerkStdDev-Z<li>
-<li>freqBodyGyroMean-X<li>
-<li>freqBodyGyroMean-Y<li>
-<li>freqBodyGyroMean-Z<li>
-<li>freqBodyGyroStdDev-X<li>
-<li>freqBodyGyroStdDev-Y<li>
-<li>freqBodyGyroStdDev-Z<li>
-<li>freqBodyAccMagnitudeMean<li>
-<li>freqBodyAccMagnitudeStdDev<li>
-<li>freqBodyAccJerkMagnitudeMean<li>
-<li>freqBodyAccJerkMagnitudeStdDev<li>
-<li>freqBodyGyroMagnitudeMean<li>
-<li>freqBodyGyroMagnitudeStdDev<li>
-<li>freqBodyGyroJerkMagnitudeMean<li>
-<li>freqBodyGyroJerkMagnitudeStdDev<li>
+<li>timeBodyAccMean-X/</li>
+<li>timeBodyAccMean-Y</li>
+<li>timeBodyAccMean-Z</li>
+<li>timeBodyAccStdDev-X</li>
+<li>timeBodyAccStdDev-Y</li>
+<li>timeBodyAccStdDev-Z</li>
+<li>timeGravityAccMean-X</li>
+<li>timeGravityAccMean-Y</li>
+<li>timeGravityAccMean-Z</li>
+<li>timeGravityAccStdDev-X</li>
+<li>timeGravityAccStdDev-Y</li>
+<li>timeGravityAccStdDev-Z</li>
+<li>timeBodyAccJerkMean-X</li>
+<li>timeBodyAccJerkMean-Y</li>
+<li>timeBodyAccJerkMean-Z</li>
+<li>timeBodyAccJerkStdDev-X</li>
+<li>timeBodyAccJerkStdDev-Y</li>
+<li>timeBodyAccJerkStdDev-Z</li>
+<li>timeBodyGyroMean-X</li>
+<li>timeBodyGyroMean-Y</li>
+<li>timeBodyGyroMean-Z</li>
+<li>timeBodyGyroStdDev-X</li>
+<li>timeBodyGyroStdDev-Y</li>
+<li>timeBodyGyroStdDev-Z</li>
+<li>timeBodyGyroJerkMean-X</li>
+<li>timeBodyGyroJerkMean-Y</li>
+<li>timeBodyGyroJerkMean-Z</li>
+<li>timeBodyGyroJerkStdDev-X</li>
+<li>timeBodyGyroJerkStdDev-Y</li>
+<li>timeBodyGyroJerkStdDev-Z</li>
+<li>timeBodyAccMagnitudeMean</li>
+<li>timeBodyAccMagnitudeStdDev</li>
+<li>timeGravityAccMagnitudeMean</li>
+<li>timeGravityAccMagnitudeStdDev</li>
+<li>timeBodyAccJerkMagnitudeMean</li>
+<li>timeBodyAccJerkMagnitudeStdDev</li>
+<li>timeBodyGyroMagnitudeMean</li>
+<li>timeBodyGyroMagnitudeStdDev</li>
+<li>timeBodyGyroJerkMagnitudeMean</li>
+<li>timeBodyGyroJerkMagnitudeStdDev</li>
+<li>freqBodyAccMean-X</li>
+<li>freqBodyAccMean-Y</li>
+<li>freqBodyAccMean-Z</li>
+<li>freqBodyAccStdDev-X</li>
+<li>freqBodyAccStdDev-Y</li>
+<li>freqBodyAccStdDev-Z</li>
+<li>freqBodyAccJerkMean-X</li>
+<li>freqBodyAccJerkMean-Y</li>
+<li>freqBodyAccJerkMean-Z</li>
+<li>freqBodyAccJerkStdDev-X</li>
+<li>freqBodyAccJerkStdDev-Y</li>
+<li>freqBodyAccJerkStdDev-Z</li>
+<li>freqBodyGyroMean-X</li>
+<li>freqBodyGyroMean-Y</li>
+<li>freqBodyGyroMean-Z</li>
+<li>freqBodyGyroStdDev-X</li>
+<li>freqBodyGyroStdDev-Y</li>
+<li>freqBodyGyroStdDev-Z</li>
+<li>freqBodyAccMagnitudeMean</li>
+<li>freqBodyAccMagnitudeStdDev</li>
+<li>freqBodyAccJerkMagnitudeMean</li>
+<li>freqBodyAccJerkMagnitudeStdDev</li>
+<li>freqBodyGyroMagnitudeMean</li>
+<li>freqBodyGyroMagnitudeStdDev</li>
+<li>freqBodyGyroJerkMagnitudeMean</li>
+<li>freqBodyGyroJerkMagnitudeStdDev</li>
 </ul>
