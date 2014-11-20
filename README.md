@@ -2,7 +2,8 @@
 run_analysis.R
 ==============
 
-License about data used in this script:
+License about source/original data used in this script:
+  
 <em>
 Use of this dataset in publications must be acknowledged by referencing the following publication [1] </em>
 
@@ -119,7 +120,7 @@ Variables:
 <ul>
 <li>All measure columns are numeric. Decimal separator is ".", negative symbol for value is "-".</li>   
 <li>Letters (-X, -Y, -Z) in variables name is used to denote 3-axial signals in the X, Y and Z directions. </li>  
-<li>Originals Features was normalized and bounded within [-1,1]. in this data every measure is aggregated by mean function.</li>   
+<li>Originals features was normalized and bounded within [-1,1]. In this data every feature measure is aggregated by mean function.</li>   
 <li>On original data prefix 't' was to denote time, this 't' is changed to word' time' in this data set.</li>   
 <li>On original data prefix 'f' was to indicate frequency domain signals, this 'f' is changed to word 'freq' in this data set</li>   
 </ul>
