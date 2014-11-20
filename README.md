@@ -24,11 +24,19 @@ UCI HAR DATASET  dataset can be found from url: "https://d396qusza40orc.cloudfro
 <li>X_train.txt</li>
 <li>y_train.txt</li>
 </ul>
+
+Script also reads <strong>feataures.txt</strong> and <strong>activity lables.txt</strong> datas, for variable naming purposes and for activity labels. 
 <em>Please note that all data have to be under your working directoy in subfolder UCI HAR Dataset</em>
+
+<strong>Data Combining</strong>
+
+subject_test.txt, X_test.txt and y_test.txt datas are combined to one test data at same time that those data are read with script.  
+subject_train.txt, X_train.txt and y_train.txt datas are combined to one traind data at same time that those data are read with script.  
+After combaining test and train datasets, those two are rowcobined to one analyseData set.
 
 <strong>Data manipulations</strong>
 
-Following manipulations is made to data:
+Following manipulations is made to combained analysesData dataset:
 
 <ul>
 <li>Activities number/code is replased according to UCI HAR Dataset/activity_labels.txt</li>
@@ -93,7 +101,8 @@ Values: 1 to 30
 <strong>Measure columns</strong>  
 
 All measure columns are numeric. Desimalseparator is ".", negative symbol for value is "-". 
-Lettrs (x, y z) in variables name is used to denote 3-axial signals in the X, Y and Z directions.  
+Lettrs (x, y z) in variables name is used to denote 3-axial signals in the X, Y and Z directions.
+  
 <ul>
 <li>timeBodyAccMean-X</li>
 <li>timeBodyAccMean-Y</li>
