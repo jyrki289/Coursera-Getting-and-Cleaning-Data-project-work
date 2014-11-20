@@ -55,7 +55,7 @@ Following manipulations is made to combained analysesData dataset:
 <li>Column averages are calculated for each activity and subject</li>
 <li>Columns are named as activity, subjectid, and mesured variables are named according <em>features.txt</em> file.</li>
 <li>columns are also named by following rules</li>
-</ul>
+
 <ol>
 <li>-std changed to StdDev</li>
 <li>-mean changed to Mean</li>
@@ -69,6 +69,7 @@ Following manipulations is made to combained analysesData dataset:
 <li>JerkMag changed to JerkMagnitude</li>
 <li>GyroMag changed to GyroMagnitude</li>
 </ol>
+</ul>
 
 Outputs
 -------
@@ -106,21 +107,23 @@ Variables:
 </ul>
 <ul>
 <li>subjectid</li>
-</ul>
 
 <ul>
-Identifier of volunteer  
-Type: Numeric - Integer  
-Values: 1 to 30
+<li>Identifier of volunteer</li>   
+<li>Type: Numeric - Integer</li>  
+<li>Values: 1 to 30</li> 
 </ul>  
+</ul>
 
 <strong>Measure columns</strong>  
 <ul>
-All measure columns are numeric. Decimalseparator is ".", negative symbol for value is "-".  
-Lettrs (x, y z) in variables name is used to denote 3-axial signals in the X, Y and Z directions.  
-Originals Features was normalized and bounded within [-1,1]. in this data every measure is aggregated by mean function.  
-On original data prefix 't' was to denote time, this 't' is changed to word' time' in this data set.  
-On original data prefix 'f' was to indicate frequency domain signals, this 'f' is changed to word 'freq' in this data set  
+<ul>
+<li>All measure columns are numeric. Decimal separator is ".", negative symbol for value is "-".</li>   
+<li>Letters (-X, -Y, -Z) in variables name is used to denote 3-axial signals in the X, Y and Z directions. </li>  
+<li>Originals Features was normalized and bounded within [-1,1]. in this data every measure is aggregated by mean function.</li>   
+<li>On original data prefix 't' was to denote time, this 't' is changed to word' time' in this data set.</li>   
+<li>On original data prefix 'f' was to indicate frequency domain signals, this 'f' is changed to word 'freq' in this data set</li>   
+</ul>
 </ul>
   
 <ul>
