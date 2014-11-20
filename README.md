@@ -99,9 +99,9 @@ Variables:
 <li>activity</li>
 
 <ul>
---Activity label, actity performed by volunteer (subjectid)  
---Type: character  
---Values: LAYING, SITTING, STANDING, WALKING, WLKING_DOWNSTAIRS, WALKING_UPSTAIRS  
+<li>Activity label, actity performed by volunteer (subjectid) </li> 
+<li>Type: character</li>
+<li>Values: LAYING, SITTING, STANDING, WALKING, WLKING_DOWNSTAIRS, WALKING_UPSTAIRS </li>
 </ul>
 </ul>
 <ul>
