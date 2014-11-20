@@ -2,15 +2,15 @@
 run_analysis.R
 ==============
 
-###License about data used in this script:
+License about data used in this script:
 <em>
-Use of this dataset in publications must be acknowledged by referencing the following publication [1] 
+Use of this dataset in publications must be acknowledged by referencing the following publication [1] </em>
 
-[1] Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012
+<em>[1] Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012</em>
 
-This dataset is distributed AS-IS and no responsibility implied or explicit can be addressed to the authors or their institutions for its use or misuse. Any commercial use is prohibited.
+<em>This dataset is distributed AS-IS and no responsibility implied or explicit can be addressed to the authors or their institutions for its use or misuse. Any commercial use is prohibited.</em>
 
-Jorge L. Reyes-Ortiz, Alessandro Ghio, Luca Oneto, Davide Anguita. November 2012.
+<em>Jorge L. Reyes-Ortiz, Alessandro Ghio, Luca Oneto, Davide Anguita. November 2012.
 </em>
 
 Preconditions:
@@ -110,11 +110,13 @@ Type: Numeric - Integer
 Values: 1 to 30  
 
 <strong>Measure columns</strong>  
-
+<ul>
 All measure columns are numeric. Desimalseparator is ".", negative symbol for value is "-". 
 Lettrs (x, y z) in variables name is used to denote 3-axial signals in the X, Y and Z directions.
-- Features are normalized and bounded within [-1,1].
-- Each feature vector is a row on the text file.
+Originals Features was normalized and bounded within [-1,1]. in this data every measure is aggregated by mean function.
+On original data prefix 't' was to denote time, this 't' is changed to word' time' in this data set
+On original data prefix 'f' was to indicate frequency domain signals, this 'f' is changed to word 'freq' in this data set
+</ul>
   
 <ul>
 <li>timeBodyAccMean-X</li>
