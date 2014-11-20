@@ -22,7 +22,7 @@
 
 
 # please, set workingdirectory and check that data locate under subfolder UCI HAR Dataset
-setwd("your working directory")
+setwd("C:/Users/leppajyr/Documents/Coursera/gettingandcleaning")
 library(dplyr)
 
 
@@ -93,6 +93,7 @@ columnnames  <- colnames(analysedata)
 for (i in 1:length(columnnames)) 
 {
     columnnames[i] <- gsub("\\()","",columnnames[i])
+    columnnames[i] <- gsub("-std","StdDev",columnnames[i])
     columnnames[i] <- gsub("-std$","StdDev",columnnames[i])
     columnnames[i] <- gsub("-mean","Mean",columnnames[i])
     columnnames[i] <- gsub("^(t)","time",columnnames[i])

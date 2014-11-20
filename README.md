@@ -1,19 +1,19 @@
 
-Coursera-Getting-and-Cleaning-Data-project-work
-------------------------------------------------
 run_analysis.R
 ==============
 
 Preconditions:
 -----------
-*script reads data from subfolder of current working directory
-*please make sure that UCI HAR dataset located in subfolder <strong>UCI HAR Dataset</strong>
-*you need <em>dplyr</em> library to make tidydataset
+<ul>
+<li>script reads data from subfolder of current working directory</li>
+<li>please make sure that UCI HAR dataset located in subfolder <strong>UCI HAR Dataset</strong></li>
+<li>you need <em>dplyr</em> library to make tidydataset</li>
+</ul>
 
 Scipt Description
 -----------------
 Scipt create tidydata from UCI HAR DATASET (Human Activity Recognition Using Smartphones Dataset).
-UCI HAR DATASET  dataset can be found here: <p>A <a href="<p>A <a href="https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip ">link</a>.</p>
+UCI HAR DATASET  dataset can be found url: "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
 
 <strong>Script reads folloving txt data files:</strong>
 <ul>
@@ -64,47 +64,66 @@ In r console you can run following command:
 Code book
 ---------
 File
-*Datafile: tidydata.txt
-*Columnames: columnames exist in first row
-*Column separator: " "
-*Decimal separator: "."
-*Rows in file: 180 obseravtion rows + 1 header row
-*No rownames
+<ul>
+<li>Datafile: tidydata.txt</li>
+<li>Columnames: columnames exist in first row</li>
+<li>Column separator: " "</li>
+<li>Decimal separator: "."</li>
+<li>Rows in file: 180 obseravtion rows + 1 header row</li>
+<li>Column number 68</li>
+<li>no rownames</li>
+</ul>
 
 Variables:
 ----------
-activity, type: character, include activity label
-subjectid, type: numeric, identifier
+<strong>Identifier columns</strong>
+activity
+<ul>
+<li>Activity label, actity performed by volynteer (subjectid)</li>
+<li>character</li>
+<li>Values: LAYING, SITTING, STANDING, WALKING, WLKING_DOWNSTAIRS, WALKING_UPSTAIRS</li>
+</ul>
+subjectid
+<ul>
+<li>Identifier of volunteer</li>
+<li>Nuumeric / Integer</li>
+<li>Values: 1 to 30</li>
+</ul>
+<strong>Measure columns</strong>
+<ul>
+<li>All measure columns are numeric. Desimalseparator is ".", negative symbol for value is "-"</li>
+<li>lettrs (x, y z) is used to denote 3-axial signals in the X, Y and Z directions</li>
+</ul>
 timeBodyAccMean-X
 timeBodyAccMean-Y
 timeBodyAccMean-Z
-timeBodyAcc-std-X
-timeBodyAcc-std-Y
-timeBodyAcc-std-Z
+timeBodyAccStdDev-X
+timeBodyAccStdDev-Y
+timeBodyAccStdDev-Z
 timeGravityAccMean-X
 timeGravityAccMean-Y
 timeGravityAccMean-Z
-timeGravityAcc-std-X
-timeGravityAcc-std-Y
-timeGravityAcc-std-Z
+timeGravityAccStdDev-X
+timeGravityAccStdDev-Y
+timeGravityAccStdDev-Z
 timeBodyAccJerkMean-X
 timeBodyAccJerkMean-Y
 timeBodyAccJerkMean-Z
-timeBodyAccJerk-std-X
-timeBodyAccJerk-std-Y
-timeBodyAccJerk-std-Z
+timeBodyAccJerkStdDev-X
+timeBodyAccJerkStdDev-Y
+timeBodyAccJerkStdDev-Z
 timeBodyGyroMean-X
 timeBodyGyroMean-Y
 timeBodyGyroMean-Z
-timeBodyGyro-std-X
-timeBodyGyro-std-Y
-timeBodyGyro-std-Z
+timeBodyGyroStdDev-X
+timeBodyGyroStdDev-Y
+timeBodyGyroStdDev-Z
 timeBodyGyroJerkMean-X
 timeBodyGyroJerkMean-Y
 timeBodyGyroJerkMean-Z
-timeBodyGyroJerk-std-X
-timeBodyGyroJerk-std-Y
-timeBodyGyroJerk-std-Z
+timeBodyGyroJerkStdDev-X
+timeBodyGyroJerkStdDev-Y
+timeBodyGyroJerkStdDev-Z
 timeBodyAccMagnitudeMean
 timeBodyAccMagnitudeStdDev
 timeGravityAccMagnitudeMean
@@ -118,21 +137,21 @@ timeBodyGyroJerkMagnitudeStdDev
 freqBodyAccMean-X
 freqBodyAccMean-Y
 freqBodyAccMean-Z
-freqBodyAcc-std-X
-freqBodyAcc-std-Y
-freqBodyAcc-std-Z
+freqBodyAccStdDev-X
+freqBodyAccStdDev-Y
+freqBodyAccStdDev-Z
 freqBodyAccJerkMean-X
 freqBodyAccJerkMean-Y
 freqBodyAccJerkMean-Z
-freqBodyAccJerk-std-X
-freqBodyAccJerk-std-Y
-freqBodyAccJerk-std-Z
+freqBodyAccJerkStdDev-X
+freqBodyAccJerkStdDev-Y
+freqBodyAccJerkStdDev-Z
 freqBodyGyroMean-X
 freqBodyGyroMean-Y
 freqBodyGyroMean-Z
-freqBodyGyro-std-X
-freqBodyGyro-std-Y
-freqBodyGyro-std-Z
+freqBodyGyroStdDev-X
+freqBodyGyroStdDev-Y
+freqBodyGyroStdDev-Z
 freqBodyAccMagnitudeMean
 freqBodyAccMagnitudeStdDev
 freqBodyAccJerkMagnitudeMean
