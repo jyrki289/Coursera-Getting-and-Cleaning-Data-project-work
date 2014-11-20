@@ -96,7 +96,7 @@ Variables:
 <strong>Measure columns</strong>  
 
 &nbsp; &nbsp; &nbsp; &nbsp; All measure columns are numeric. Desimalseparator is ".", negative symbol for value is "-". 
-&nbsp; &nbsp; &nbsp; &nbsp; Lettrs (x, y z) in variables name is used to denote 3-axial signals in the X, Y and Z directions.  
+&nbsp &nbsp &nbsp &nbsp Lettrs (x, y z) in variables name is used to denote 3-axial signals in the X, Y and Z directions.  
 <ul>
 <li>timeBodyAccMean-X/</li>
 <li>timeBodyAccMean-Y</li>
