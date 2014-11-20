@@ -34,17 +34,17 @@ Following manipulations is made to data:
 <li>columns are also named by following rules</li>
 </ul>
 <ol>
-&nbsp;&nbsp;&nbsp;&nbsp;  	<li>-std to StdDev</li>
-&nbsp;&nbsp;&nbsp;&nbsp; 	<li>-mean to Mean</li>
-&nbsp;&nbsp; &nbsp; &nbsp;  	<li>-t to time</li>
-&nbsp;&nbsp; &nbsp; &nbsp;  	<li>-f to freq</li>
-&nbsp;&nbsp; &nbsp; &nbsp;  	<li>gravity to Gravity</li>
-&nbsp;&nbsp; &nbsp; &nbsp;  	<li>body to Body</li>
-&nbsp; &nbsp; &nbsp; &nbsp; 	<li>gyro to Gyro</li>
-&nbsp; &nbsp; &nbsp; &nbsp; 	<li>AccMag to AccMagnitude</li>
-&nbsp;&nbsp; &nbsp; &nbsp;  	<li>bodyaccjerkmag to BodyAccJerkMagnitude</li>
-&nbsp; &nbsp; &nbsp; &nbsp; 	<li>JerkMag to JerkMagnitude</li>
-&nbsp; &nbsp; &nbsp; &nbsp; 	<li>GyroMag to GyroMagnitude</li>
+ 	<li>&nbsp;&nbsp;&nbsp;&nbsp;-std to StdDev</li>
+	<li>&nbsp;&nbsp;&nbsp;&nbsp;-mean to Mean</li>
+ 	<li>&nbsp;&nbsp; &nbsp; &nbsp;-t to time</li>
+ 	<li>&nbsp;&nbsp; &nbsp; &nbsp;-f to freq</li>
+ 	<li>&nbsp;&nbsp; &nbsp; &nbsp;gravity to Gravity</li>
+	<li>&nbsp;&nbsp; &nbsp; &nbsp;body to Body</li>
+	<li>&nbsp; &nbsp; &nbsp; &nbsp;gyro to Gyro</li>
+<li>&nbsp; &nbsp; &nbsp; &nbsp;AccMag to AccMagnitude</li>
+	<li>&nbsp;&nbsp; &nbsp; &nbsp;bodyaccjerkmag to BodyAccJerkMagnitude</li>
+&nbsp; &nbsp; &nbsp; &nbsp;<li>JerkMag to JerkMagnitude</li>
+&nbsp; &nbsp; &nbsp; &nbsp;<li>GyroMag to GyroMagnitude</li>
 </ol>
 <ul>
 <li>Activities number/code is replased according to UCI HAR Dataset/activity_labels.txt</li>
@@ -96,7 +96,7 @@ Variables:
 <strong>Measure columns</strong>  
 
 &nbsp; &nbsp; &nbsp; &nbsp; All measure columns are numeric. Desimalseparator is ".", negative symbol for value is "-". 
-&nbsp &nbsp &nbsp &nbsp Lettrs (x, y z) in variables name is used to denote 3-axial signals in the X, Y and Z directions.  
+&nbsp; &nbsp; &nbsp; &nbsp; Lettrs (x, y z) in variables name is used to denote 3-axial signals in the X, Y and Z directions.  
 <ul>
 <li>timeBodyAccMean-X/</li>
 <li>timeBodyAccMean-Y</li>
