@@ -40,11 +40,11 @@ Script also reads <strong>feataures.txt</strong> and <strong>activity lables.txt
 <em>Please note that all data have to be under your working directoy in subfolder UCI HAR Dataset</em>
 
 <strong>Data Combining</strong>
-
-subject_test.txt, X_test.txt and y_test.txt datas are combined to one test data at same time that those data are read with script.  
-subject_train.txt, X_train.txt and y_train.txt datas are combined to one traind data at same time that those data are read with script.  
-After combaining test and train datasets, those two are rowcombined to one analyseData set.
-
+<ol>
+<li>subject_test.txt, X_test.txt and y_test.txt datas are combined to one test data at same time that those data are read with script.</li> 
+<li>subject_train.txt, X_train.txt and y_train.txt datas are combined to one traind data at same time that those data are read with script.</li>  
+<li>After combaining test and train datasets, those two are rowcombined to one analyseData set.</li>
+</ol>
 <strong>Data manipulations</strong>
 
 Following manipulations is made to combained analysesData dataset:
@@ -55,8 +55,7 @@ Following manipulations is made to combained analysesData dataset:
 <li>Column averages are calculated for each activity and subject</li>
 <li>Columns are named as activity, subjectid, and mesured variables are named according <em>features.txt</em> file.</li>
 <li>columns are also named by following rules</li>
-
-<ol>
+<ul>
 <li>-std changed to StdDev</li>
 <li>-mean changed to Mean</li>
 <li>-t changed to time</li>
@@ -68,7 +67,7 @@ Following manipulations is made to combained analysesData dataset:
 <li>bodyaccjerkmag changed to BodyAccJerkMagnitude</li>
 <li>JerkMag changed to JerkMagnitude</li>
 <li>GyroMag changed to GyroMagnitude</li>
-</ol>
+</ul>
 </ul>
 
 Outputs
