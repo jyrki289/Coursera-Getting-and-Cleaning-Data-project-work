@@ -12,7 +12,7 @@ Preconditions:
 
 Scipt Description
 -----------------
-&nbsp; Scipt create tidydata from UCI HAR DATASET (Human Activity Recognition Using Smartphones Dataset).  
+&nbsp; Scipt create tidydata from UCI HAR DATASET (Human Activity Recognition Using Smartphones Dataset).
 &nbsp; UCI HAR DATASET  dataset can be found from url: "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
 
 <strong>Script reads folloving txt data files:</strong>
@@ -34,17 +34,17 @@ Following manipulations is made to data:
 <li>columns are also named by following rules</li>
 </ul>
 <ol>
-&nbsp; 	<li>-std to StdDev</li>
-&nbsp; 	<li>-mean to Mean</li>
-&nbsp; 	<li>-t to time</li>
-&nbsp; 	<li>-f to freq</li>
-&nbsp; 	<li>gravity to Gravity</li>
-&nbsp; 	<li>body to Body</li>
-&nbsp; 	<li>gyro to Gyro</li>
-&nbsp; 	<li>AccMag to AccMagnitude</li>
-&nbsp; 	<li>bodyaccjerkmag to BodyAccJerkMagnitude</li>
-&nbsp; 	<li>JerkMag to JerkMagnitude</li>
-&nbsp; 	<li>GyroMag to GyroMagnitude</li>
+&nbsp;&nbsp;&nbsp;&nbsp;  	<li>-std to StdDev</li>
+&nbsp;&nbsp;&nbsp;&nbsp; 	<li>-mean to Mean</li>
+&nbsp;&nbsp; &nbsp; &nbsp;  	<li>-t to time</li>
+&nbsp;&nbsp; &nbsp; &nbsp;  	<li>-f to freq</li>
+&nbsp;&nbsp; &nbsp; &nbsp;  	<li>gravity to Gravity</li>
+&nbsp;&nbsp; &nbsp; &nbsp;  	<li>body to Body</li>
+&nbsp; &nbsp; &nbsp; &nbsp; 	<li>gyro to Gyro</li>
+&nbsp; &nbsp; &nbsp; &nbsp; 	<li>AccMag to AccMagnitude</li>
+&nbsp;&nbsp; &nbsp; &nbsp;  	<li>bodyaccjerkmag to BodyAccJerkMagnitude</li>
+&nbsp; &nbsp; &nbsp; &nbsp; 	<li>JerkMag to JerkMagnitude</li>
+&nbsp; &nbsp; &nbsp; &nbsp; 	<li>GyroMag to GyroMagnitude</li>
 </ol>
 <ul>
 <li>Activities number/code is replased according to UCI HAR Dataset/activity_labels.txt</li>
@@ -54,12 +54,11 @@ Following manipulations is made to data:
 
 Outputs
 -------
-Created tidy data set with the average of each variable for each activity and each subject.
+&nbsp; Created tidy data set with the average of each variable for each activity and each subject.
 
 Usage
 -----
-In r console you can run following command:
-<strong>source('run_analysis.R')</strong>
+&nbsp; In r console you can run following command: <strong>source('run_analysis.R')</strong>
 
 Code book
 =========
@@ -82,22 +81,22 @@ Variables:
 <li>activity</li>  
 </ul>
 
-Activity label, actity performed by volynteer (subjectid)  
-character  
-Values: LAYING, SITTING, STANDING, WALKING, WLKING_DOWNSTAIRS, WALKING_UPSTAIRS  
+&nbsp; &nbsp; &nbsp; &nbsp; Activity label, actity performed by volynteer (subjectid)  
+&nbsp; &nbsp; &nbsp; &nbsp; Type: character  
+&nbsp; &nbsp; &nbsp; &nbsp; Values: LAYING, SITTING, STANDING, WALKING, WLKING_DOWNSTAIRS, WALKING_UPSTAIRS  
 
 <ul>
 <li>subjectid</li>
 </ul>
 
-Identifier of volunteer  
-Nuumeric / Integer  
-Values: 1 to 30  
+&nbsp; &nbsp; &nbsp; &nbsp; Identifier of volunteer  
+&nbsp; &nbsp; &nbsp; &nbsp; Type: Nuumeric - Integer  
+&nbsp; &nbsp; &nbsp; &nbsp; Values: 1 to 30  
 
 <strong>Measure columns</strong>  
 
-All measure columns are numeric. Desimalseparator is ".", negative symbol for value is "-". 
-Lettrs (x, y z) is used to denote 3-axial signals in the X, Y and Z directions.  
+&nbsp; &nbsp; &nbsp; &nbsp; All measure columns are numeric. Desimalseparator is ".", negative symbol for value is "-". 
+&nbsp; &nbsp; &nbsp; &nbsp; Lettrs (x, y z) in variables name is used to denote 3-axial signals in the X, Y and Z directions.  
 <ul>
 <li>timeBodyAccMean-X/</li>
 <li>timeBodyAccMean-Y</li>
