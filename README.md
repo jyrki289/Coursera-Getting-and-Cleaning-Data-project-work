@@ -12,8 +12,8 @@ Preconditions:
 
 Scipt Description
 -----------------
-&nbsp; Scipt create tidydata from UCI HAR DATASET (Human Activity Recognition Using Smartphones Dataset).
-&nbsp; UCI HAR DATASET  dataset can be found from url: "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
+Scipt create tidydata from UCI HAR DATASET (Human Activity Recognition Using Smartphones Dataset).
+UCI HAR DATASET  dataset can be found from url: "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
 
 <strong>Script reads folloving txt data files:</strong>
 <ul>
@@ -24,41 +24,40 @@ Scipt Description
 <li>X_train.txt</li>
 <li>y_train.txt</li>
 </ul>
-&nbsp; <em>Please note that all data have to be under your working directoy in subfolder UCI HAR Dataset</em>
+<em>Please note that all data have to be under your working directoy in subfolder UCI HAR Dataset</em>
 
 <strong>Data manipulations</strong>
 
 Following manipulations is made to data:
-<ul>
-<li>Columns are named as activity, subjectid, and mesured variables are named according <em>features.txt</em> file.</li>
-<li>columns are also named by following rules</li>
-</ul>
-<ol>
- 	<li>&nbsp;&nbsp;&nbsp;&nbsp;-std to StdDev</li>
-	<li>&nbsp;&nbsp;&nbsp;&nbsp;-mean to Mean</li>
- 	<li>&nbsp;&nbsp; &nbsp; &nbsp;-t to time</li>
- 	<li>&nbsp;&nbsp; &nbsp; &nbsp;-f to freq</li>
- 	<li>&nbsp;&nbsp; &nbsp; &nbsp;gravity to Gravity</li>
-	<li>&nbsp;&nbsp; &nbsp; &nbsp;body to Body</li>
-	<li>&nbsp; &nbsp; &nbsp; &nbsp;gyro to Gyro</li>
-<li>&nbsp; &nbsp; &nbsp; &nbsp;AccMag to AccMagnitude</li>
-	<li>&nbsp;&nbsp; &nbsp; &nbsp;bodyaccjerkmag to BodyAccJerkMagnitude</li>
-&nbsp; &nbsp; &nbsp; &nbsp;<li>JerkMag to JerkMagnitude</li>
-&nbsp; &nbsp; &nbsp; &nbsp;<li>GyroMag to GyroMagnitude</li>
-</ol>
+
 <ul>
 <li>Activities number/code is replased according to UCI HAR Dataset/activity_labels.txt</li>
 <li>Only columns related to mean (mean) and standard deviation (std) are included in the result</li>
 <li>Column averages are calculated for each activity and subject</li>
+<li>Columns are named as activity, subjectid, and mesured variables are named according <em>features.txt</em> file.</li>
+<li>columns are also named by following rules</li>
 </ul>
+<ol>
+<li>-std changed to StdDev</li>
+<li>-mean changed to Mean</li>
+<li>-t changed to time</li>
+<li>-f changed to freq</li>
+<li>gravity changed to Gravity</li>
+<li>body changed to Body</li>
+<li>gyro changed to Gyro</li>
+<li>AccMag changed to AccMagnitude</li>
+<li>bodyaccjerkmag changed to BodyAccJerkMagnitude</li>
+<li>JerkMag changed to JerkMagnitude</li>
+<li>GyroMag changed to GyroMagnitude</li>
+</ol>
 
 Outputs
 -------
-&nbsp; Created tidy data set with the average of each variable for each activity and each subject.
+Created tidy data set with the average of each variable for each activity and each subject.
 
 Usage
 -----
-&nbsp; In r console you can run following command: <strong>source('run_analysis.R')</strong>
+In r console you can run following command: <strong>source('run_analysis.R')</strong>
 
 Code book
 =========
@@ -78,27 +77,25 @@ Variables:
 ----------
 <strong>Identifier columns</strong>
 <ul>
-<li>activity</li>  
+<li>activity</li>
 </ul>
-
-&nbsp; &nbsp; &nbsp; &nbsp; Activity label, actity performed by volynteer (subjectid)  
-&nbsp; &nbsp; &nbsp; &nbsp; Type: character  
-&nbsp; &nbsp; &nbsp; &nbsp; Values: LAYING, SITTING, STANDING, WALKING, WLKING_DOWNSTAIRS, WALKING_UPSTAIRS  
+Activity label, actity performed by volynteer (subjectid)  
+Type: character  
+Values: LAYING, SITTING, STANDING, WALKING, WLKING_DOWNSTAIRS, WALKING_UPSTAIRS  
 
 <ul>
 <li>subjectid</li>
 </ul>
-
-&nbsp; &nbsp; &nbsp; &nbsp; Identifier of volunteer  
-&nbsp; &nbsp; &nbsp; &nbsp; Type: Nuumeric - Integer  
-&nbsp; &nbsp; &nbsp; &nbsp; Values: 1 to 30  
+Identifier of volunteer  
+Type: Numeric - Integer  
+Values: 1 to 30  
 
 <strong>Measure columns</strong>  
 
-&nbsp; &nbsp; &nbsp; &nbsp; All measure columns are numeric. Desimalseparator is ".", negative symbol for value is "-". 
-&nbsp; &nbsp; &nbsp; &nbsp; Lettrs (x, y z) in variables name is used to denote 3-axial signals in the X, Y and Z directions.  
+All measure columns are numeric. Desimalseparator is ".", negative symbol for value is "-". 
+Lettrs (x, y z) in variables name is used to denote 3-axial signals in the X, Y and Z directions.  
 <ul>
-<li>timeBodyAccMean-X/</li>
+<li>timeBodyAccMean-X</li>
 <li>timeBodyAccMean-Y</li>
 <li>timeBodyAccMean-Z</li>
 <li>timeBodyAccStdDev-X</li>
