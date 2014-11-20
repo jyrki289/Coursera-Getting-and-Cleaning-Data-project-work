@@ -28,22 +28,28 @@ UCI HAR DATASET  dataset can be found here: <p>A <a href="<p>A <a href="https://
 <strong>Data manipulations</strong>
 
 Following manipulations is made to data:
-*Columns are named as activity, subjectid, and mesured variables are named according <em>features.txt</em> file.
-*columns are also named by following rules
-1. -std to StdDev
-2. -mean to Mean
-3. -t to time
-4. -f to freq
-5. gravity to Gravity
-6. body to Body
-7. gyro to Gyro
-8. AccMag to AccMagnitude
-9. bodyaccjerkmag to BodyAccJerkMagnitude
-10. JerkMag to JerkMagnitude
-11. GyroMag to GyroMagnitude
-*Activities number/code is replased according to UCI HAR Dataset/activity_labels.txt
-*Only columns related to mean (mean) and standard deviation (std) are included in the result
-*Column averages are calculated for each activity and subject
+<ul>
+<li>Columns are named as activity, subjectid, and mesured variables are named according <em>features.txt</em> file.</li>
+<li>columns are also named by following rules</li>
+</ul>
+<ol>
+<li>-std to StdDev</li>
+<li>-mean to Mean</li>
+<li>-t to time</li>
+<li>-f to freq</li>
+<li>gravity to Gravity</li>
+<li>body to Body</li>
+<li>gyro to Gyro</li>
+<li>AccMag to AccMagnitude</li>
+<li>bodyaccjerkmag to BodyAccJerkMagnitude</li>
+<li>JerkMag to JerkMagnitude</li>
+<li>GyroMag to GyroMagnitude</li>
+</ol>
+<ul>
+<li>Activities number/code is replased according to UCI HAR Dataset/activity_labels.txt</li>
+<li>Only columns related to mean (mean) and standard deviation (std) are included in the result</li>
+<li>Column averages are calculated for each activity and subject</li>
+</ul>
 
 Outputs
 -------
