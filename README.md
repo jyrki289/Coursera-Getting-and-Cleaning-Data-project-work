@@ -16,13 +16,14 @@ Scipt create tidydata from UCI HAR DATASET (Human Activity Recognition Using Sma
 UCI HAR DATASET  dataset can be found here: <p>A <a href="<p>A <a href="https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip ">link</a>.</p>
 
 <strong>Script reads folloving txt data files:</strong>
-*subject_test.txt
-*X_test.txt
-*y_test.txt
-*subject_train.txt
-*X_train.txt
-*y_train.txt
-
+<ul>
+<li>subject_test.txt</li>
+<li>X_test.txt</li>
+<li>y_test.txt</li>
+<li>subject_train.txt</li>
+<li>X_train.txt</li>
+<li>y_train.txt</li>
+</ul>
 <em>Please note that all data have to be under your working directoy in subfolder UCI HAR Dataset</em>
 
 <strong>Data manipulations</strong>
@@ -33,17 +34,17 @@ Following manipulations is made to data:
 <li>columns are also named by following rules</li>
 </ul>
 <ol>
-<li>-std to StdDev</li>
-<li>-mean to Mean</li>
-<li>-t to time</li>
-<li>-f to freq</li>
-<li>gravity to Gravity</li>
-<li>body to Body</li>
-<li>gyro to Gyro</li>
-<li>AccMag to AccMagnitude</li>
-<li>bodyaccjerkmag to BodyAccJerkMagnitude</li>
-<li>JerkMag to JerkMagnitude</li>
-<li>GyroMag to GyroMagnitude</li>
+	<li>-std to StdDev</li>
+	<li>-mean to Mean</li>
+	<li>-t to time</li>
+	<li>-f to freq</li>
+	<li>gravity to Gravity</li>
+	<li>body to Body</li>
+	<li>gyro to Gyro</li>
+	<li>AccMag to AccMagnitude</li>
+	<li>bodyaccjerkmag to BodyAccJerkMagnitude</li>
+	<li>JerkMag to JerkMagnitude</li>
+	<li>GyroMag to GyroMagnitude</li>
 </ol>
 <ul>
 <li>Activities number/code is replased according to UCI HAR Dataset/activity_labels.txt</li>
