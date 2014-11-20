@@ -78,88 +78,91 @@ File
 Variables:
 ----------
 <strong>Identifier columns</strong>
-
-activity
 <ul>
-<li>Activity label, actity performed by volynteer (subjectid)</li>
-<li>character</li>
-<li>Values: LAYING, SITTING, STANDING, WALKING, WLKING_DOWNSTAIRS, WALKING_UPSTAIRS</li>
+<li>activity</li>  
 </ul>
 
-subjectid
+Activity label, actity performed by volynteer (subjectid)  
+character  
+Values: LAYING, SITTING, STANDING, WALKING, WLKING_DOWNSTAIRS, WALKING_UPSTAIRS  
+
 <ul>
-<li>Identifier of volunteer</li>
-<li>Nuumeric / Integer</li>
-<li>Values: 1 to 30</li>
+<li>subjectid</li>
 </ul>
-<strong>Measure columns</strong>
+
+Identifier of volunteer  
+Nuumeric / Integer  
+Values: 1 to 30  
+
+<strong>Measure columns</strong>  
+
+All measure columns are numeric. Desimalseparator is ".", negative symbol for value is "-". 
+Lettrs (x, y z) is used to denote 3-axial signals in the X, Y and Z directions.  
 <ul>
-<li>All measure columns are numeric. Desimalseparator is ".", negative symbol for value is "-"</li>
-<li>lettrs (x, y z) is used to denote 3-axial signals in the X, Y and Z directions</li>
+<li>timeBodyAccMean-X/<li>
+<li>timeBodyAccMean-Y<li>
+<li>timeBodyAccMean-Z<li>
+<li>timeBodyAccStdDev-X<li>
+<li>timeBodyAccStdDev-Y<li>
+<li>timeBodyAccStdDev-Z<li>
+<li>timeGravityAccMean-X<li>
+<li>timeGravityAccMean-Y<li>
+<li>timeGravityAccMean-Z<li>
+<li>timeGravityAccStdDev-X<li>
+<li>timeGravityAccStdDev-Y<li>
+<li>timeGravityAccStdDev-Z<li>
+<li>timeBodyAccJerkMean-X<li>
+<li>timeBodyAccJerkMean-Y<li>
+<li>timeBodyAccJerkMean-Z<li>
+<li>timeBodyAccJerkStdDev-X<li>
+<li>timeBodyAccJerkStdDev-Y<li>
+<li>timeBodyAccJerkStdDev-Z<li>
+<li>timeBodyGyroMean-X<li>
+<li>timeBodyGyroMean-Y<li>
+<li>timeBodyGyroMean-Z<li>
+<li>timeBodyGyroStdDev-X<li>
+<li>timeBodyGyroStdDev-Y<li>
+<li>timeBodyGyroStdDev-Z<li>
+<li>timeBodyGyroJerkMean-X<li>
+<li>timeBodyGyroJerkMean-Y<li>
+<li>timeBodyGyroJerkMean-Z<li>
+<li>timeBodyGyroJerkStdDev-X<li>
+<li>timeBodyGyroJerkStdDev-Y<li>
+<li>timeBodyGyroJerkStdDev-Z<li>
+<li>timeBodyAccMagnitudeMean<li>
+<li>timeBodyAccMagnitudeStdDev<li>
+<li>timeGravityAccMagnitudeMean<li>
+<li>timeGravityAccMagnitudeStdDev<li>
+<li>timeBodyAccJerkMagnitudeMean<li>
+<li>timeBodyAccJerkMagnitudeStdDev<li>
+<li>timeBodyGyroMagnitudeMean<li>
+<li>timeBodyGyroMagnitudeStdDev<li>
+<li>timeBodyGyroJerkMagnitudeMean<li>
+<li>timeBodyGyroJerkMagnitudeStdDev<li>
+<li>freqBodyAccMean-X<li>
+<li>freqBodyAccMean-Y<li>
+<li>freqBodyAccMean-Z<li>
+<li>freqBodyAccStdDev-X<li>
+<li>freqBodyAccStdDev-Y<li>
+<li>freqBodyAccStdDev-Z<li>
+<li>freqBodyAccJerkMean-X<li>
+<li>freqBodyAccJerkMean-Y<li>
+<li>freqBodyAccJerkMean-Z<li>
+<li>freqBodyAccJerkStdDev-X<li>
+<li>freqBodyAccJerkStdDev-Y<li>
+<li>freqBodyAccJerkStdDev-Z<li>
+<li>freqBodyGyroMean-X<li>
+<li>freqBodyGyroMean-Y<li>
+<li>freqBodyGyroMean-Z<li>
+<li>freqBodyGyroStdDev-X<li>
+<li>freqBodyGyroStdDev-Y<li>
+<li>freqBodyGyroStdDev-Z<li>
+<li>freqBodyAccMagnitudeMean<li>
+<li>freqBodyAccMagnitudeStdDev<li>
+<li>freqBodyAccJerkMagnitudeMean<li>
+<li>freqBodyAccJerkMagnitudeStdDev<li>
+<li>freqBodyGyroMagnitudeMean<li>
+<li>freqBodyGyroMagnitudeStdDev<li>
+<li>freqBodyGyroJerkMagnitudeMean<li>
+<li>freqBodyGyroJerkMagnitudeStdDev<li>
 </ul>
-timeBodyAccMean-X
-timeBodyAccMean-Y
-timeBodyAccMean-Z
-timeBodyAccStdDev-X
-timeBodyAccStdDev-Y
-timeBodyAccStdDev-Z
-timeGravityAccMean-X
-timeGravityAccMean-Y
-timeGravityAccMean-Z
-timeGravityAccStdDev-X
-timeGravityAccStdDev-Y
-timeGravityAccStdDev-Z
-timeBodyAccJerkMean-X
-timeBodyAccJerkMean-Y
-timeBodyAccJerkMean-Z
-timeBodyAccJerkStdDev-X
-timeBodyAccJerkStdDev-Y
-timeBodyAccJerkStdDev-Z
-timeBodyGyroMean-X
-timeBodyGyroMean-Y
-timeBodyGyroMean-Z
-timeBodyGyroStdDev-X
-timeBodyGyroStdDev-Y
-timeBodyGyroStdDev-Z
-timeBodyGyroJerkMean-X
-timeBodyGyroJerkMean-Y
-timeBodyGyroJerkMean-Z
-timeBodyGyroJerkStdDev-X
-timeBodyGyroJerkStdDev-Y
-timeBodyGyroJerkStdDev-Z
-timeBodyAccMagnitudeMean
-timeBodyAccMagnitudeStdDev
-timeGravityAccMagnitudeMean
-timeGravityAccMagnitudeStdDev
-timeBodyAccJerkMagnitudeMean
-timeBodyAccJerkMagnitudeStdDev
-timeBodyGyroMagnitudeMean
-timeBodyGyroMagnitudeStdDev
-timeBodyGyroJerkMagnitudeMean
-timeBodyGyroJerkMagnitudeStdDev
-freqBodyAccMean-X
-freqBodyAccMean-Y
-freqBodyAccMean-Z
-freqBodyAccStdDev-X
-freqBodyAccStdDev-Y
-freqBodyAccStdDev-Z
-freqBodyAccJerkMean-X
-freqBodyAccJerkMean-Y
-freqBodyAccJerkMean-Z
-freqBodyAccJerkStdDev-X
-freqBodyAccJerkStdDev-Y
-freqBodyAccJerkStdDev-Z
-freqBodyGyroMean-X
-freqBodyGyroMean-Y
-freqBodyGyroMean-Z
-freqBodyGyroStdDev-X
-freqBodyGyroStdDev-Y
-freqBodyGyroStdDev-Z
-freqBodyAccMagnitudeMean
-freqBodyAccMagnitudeStdDev
-freqBodyAccJerkMagnitudeMean
-freqBodyAccJerkMagnitudeStdDev
-freqBodyGyroMagnitudeMean
-freqBodyGyroMagnitudeStdDev
-freqBodyGyroJerkMagnitudeMean
-freqBodyGyroJerkMagnitudeStdDev
