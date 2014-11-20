@@ -2,6 +2,17 @@
 run_analysis.R
 ==============
 
+###License about data used in this script:
+<em>
+Use of this dataset in publications must be acknowledged by referencing the following publication [1] 
+
+[1] Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012
+
+This dataset is distributed AS-IS and no responsibility implied or explicit can be addressed to the authors or their institutions for its use or misuse. Any commercial use is prohibited.
+
+Jorge L. Reyes-Ortiz, Alessandro Ghio, Luca Oneto, Davide Anguita. November 2012.
+</em>
+
 Preconditions:
 -----------
 <ul>
@@ -32,7 +43,7 @@ Script also reads <strong>feataures.txt</strong> and <strong>activity lables.txt
 
 subject_test.txt, X_test.txt and y_test.txt datas are combined to one test data at same time that those data are read with script.  
 subject_train.txt, X_train.txt and y_train.txt datas are combined to one traind data at same time that those data are read with script.  
-After combaining test and train datasets, those two are rowcobined to one analyseData set.
+After combaining test and train datasets, those two are rowcombined to one analyseData set.
 
 <strong>Data manipulations</strong>
 
@@ -102,6 +113,8 @@ Values: 1 to 30
 
 All measure columns are numeric. Desimalseparator is ".", negative symbol for value is "-". 
 Lettrs (x, y z) in variables name is used to denote 3-axial signals in the X, Y and Z directions.
+- Features are normalized and bounded within [-1,1].
+- Each feature vector is a row on the text file.
   
 <ul>
 <li>timeBodyAccMean-X</li>
