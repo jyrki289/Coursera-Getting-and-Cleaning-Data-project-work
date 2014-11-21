@@ -20,11 +20,12 @@
 #   - decimal point = .
 ###############################################################################
 
+## please, set workingdirectory and check that data locate under subfolder UCI HAR Dataset
+## please check that dplyr is loaded
+## if you run interactively you can set yor working directory here and uncommit dplyr
 
-# please, set workingdirectory and check that data locate under subfolder UCI HAR Dataset
-setwd("C:/Users/leppajyr/Documents/Coursera/gettingandcleaning")
-library(dplyr)
-
+#setwd("yor working directory")
+#library(dplyr)
 
 ################ PHASE: Data Reading and combining #######################
 ## Phase Goal: Read data from txt files and give column headers
