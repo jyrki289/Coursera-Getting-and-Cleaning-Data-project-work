@@ -95,7 +95,7 @@ columnnames  <- colnames(analysedata)
 
 #replased to vector
 #Newnames to vector
-replase <-  c("\\()","-std", "-mean","^(t)","^(f)","gravity","body","gyro","AccMag","([Bb]odyaccjerkmag)","JerkMag","GyroMag")
+replase <-  c("\\()","-std", "-mean","^(t)","^(f)","([Gg]ravity)","([Bb]ody[Bb]ody|[Bb]ody)","[Gg]yro","AccMag","([Bb]odyaccjerkmag)","JerkMag","GyroMag")
 newnam  <- c("","StdDev","Mean","time","freq","Gravity","Body","Gyro","AccMagnitude","BodyAccJerkMagnitude","JerkMagnitude","GyroMagnitude")
 
 
