@@ -55,12 +55,12 @@ test <-
 #1.1 put training and test data together
 analysedata <- rbind (test, train)
 
-#1.2 Import features data, select varible names and add those nvar names to analyseData  
+#1.2 Import features data, select column with varible names and add those names to analyseData  
 features      <- read.table("UCI HAR Dataset/features.txt",header=FALSE, stringsAsFactors = FALSE)
 features <- features[,2]
 colnames(analysedata) <- c("subjectid", "activityid", c(features))
 
-#1.3 Import activity lables data, define activityid for merge operation, merge activitylabel data with analyseData by acitivityid 
+#1.3 Import activity lables data, define activityid for merge operation. Merge activitylabel data with analyseData by acitivityid 
 activitytype  <- read.table("./UCI HAR Dataset/activity_labels.txt",header=FALSE, stringsAsFactors = FALSE)
 colnames(activitytype) <- c("activityid", "activity")
 analysedata <- merge(activitytype, analysedata, by="activityid", all.y=TRUE)
@@ -107,7 +107,7 @@ for (i in 1:length(columnnames))
     columnnames[i] <- gsub("GyroMag","GyroMagnitude",columnnames[i])
 }
 
-#2.4 Replase analysedata column headers with modified more descriptive column headers
+#2.4 Replase analysedata column headers with new modified column headers
 colnames(analysedata) <- columnnames
 
 
@@ -117,9 +117,9 @@ colnames(analysedata) <- columnnames
 ##  3.2 create file tidydata.txt 
 ################################################################################
 
-#3.1 Summarizing the finalDataNoActivityType table to include just the mean of each variable for each activity and each subject
+#3.1 Summarizing data.  Mean of each variable for activity and subject uniquepair.
 tidydata <- group_by(analysedata, activity, subjectid)
 tidydata <- summarise_each(tidydata, funs(mean))
 
-#3.2write tidyData set to working directory
+#3.2 Write tidyData set to working directory
 write.table(tidydata, "tidydata.txt", row.names=FALSE, dec=".", sep=" ")
