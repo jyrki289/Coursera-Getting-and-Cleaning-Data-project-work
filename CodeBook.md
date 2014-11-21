@@ -26,7 +26,7 @@ File
 Variables:
 ----------
 
-If you need more detailed information about variables please look Code book.PDF
+If you need more detailed information about variables please look SummaryStatOfVariables.pdf.
 
 <strong>Identifier columns</strong>
 
