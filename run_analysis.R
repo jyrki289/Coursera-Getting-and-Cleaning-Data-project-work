@@ -27,6 +27,7 @@
 #setwd("yor working directory")
 #library(dplyr)
 
+
 ################ PHASE: Data Reading and combining #######################
 ## Phase Goal: Read data from txt files and give column headers
 ##  1.1 Read data from files, there was not headers, and merge data
@@ -91,21 +92,23 @@ analysedata <- analysedata[,logicalvector==TRUE]
 
 #2.4 recreate more descriptive variable/column names
 columnnames  <- colnames(analysedata)
+
+#replased to vector
+#Newnames to vector
+replase <-  c("\\()","-std", "-mean","^(t)","^(f)","gravity","body","gyro","AccMag","([Bb]odyaccjerkmag)","JerkMag","GyroMag")
+newnam  <- c("","StdDev","Mean","time","freq","Gravity","Body","Gyro","AccMagnitude","BodyAccJerkMagnitude","JerkMagnitude","GyroMagnitude")
+
+
+columnnames  <- colnames(analysedata)
 for (i in 1:length(columnnames)) 
 {
-    columnnames[i] <- gsub("\\()","",columnnames[i])
-    columnnames[i] <- gsub("-std","StdDev",columnnames[i])
-    columnnames[i] <- gsub("-mean","Mean",columnnames[i])
-    columnnames[i] <- gsub("^(t)","time",columnnames[i])
-    columnnames[i] <- gsub("^(f)","freq",columnnames[i])
-    columnnames[i] <- gsub("([Gg]ravity)","Gravity",columnnames[i])
-    columnnames[i] <- gsub("([Bb]ody[Bb]ody|[Bb]ody)","Body",columnnames[i])
-    columnnames[i] <- gsub("[Gg]yro","Gyro",columnnames[i])
-    columnnames[i] <- gsub("AccMag","AccMagnitude",columnnames[i])
-    columnnames[i] <- gsub("([Bb]odyaccjerkmag)","BodyAccJerkMagnitude",columnnames[i])
-    columnnames[i] <- gsub("JerkMag","JerkMagnitude",columnnames[i])
-    columnnames[i] <- gsub("GyroMag","GyroMagnitude",columnnames[i])
+    for (j in 1:length(replase))
+    {
+        columnnames[i] <- gsub(replase[j],newnam[j],columnnames[i])
+    }
+    
 }
+
 
 #2.4 Replase analysedata column headers with new modified column headers
 colnames(analysedata) <- columnnames
