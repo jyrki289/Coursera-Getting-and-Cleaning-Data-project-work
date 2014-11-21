@@ -37,7 +37,7 @@ Original data features/measure data is aggregated my mean function over Activity
 <ul>
 <li>Activity label, actity performed by volunteer (subjectid) </li> 
 <li>Type: character</li>
-<li>Values: LAYING, SITTING, STANDING, WALKING, WLKING_DOWNSTAIRS, WALKING_UPSTAIRS </li>
+<li>Values: LAYING, SITTING, STANDING, WALKING, WALKING_DOWNSTAIRS, WALKING_UPSTAIRS </li>
 </ul>
 </ul>
 <ul>
